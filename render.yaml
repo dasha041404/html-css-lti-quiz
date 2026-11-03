@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: html-css-lti-quiz
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: MONGODB_URI
+        sync: false
+      - key: MOODLE_ISSUER
+        sync: false
+      - key: MOODLE_CLIENT_ID
+        sync: false
+      - key: MOODLE_DEPLOYMENT_ID
+        sync: false

@@ -1,0 +1,17 @@
+{
+  "name": "html-css-lti-quiz",
+  "version": "1.0.0",
+  "description": "LTI 1.3 инструмент для Moodle: три вопроса по HTML/CSS, оценка уходит в журнал через AGS",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "jose": "5.9.6",
+    "mongodb": "6.12.0"
+  }
+}
